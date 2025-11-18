@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Elegance Clothing offers high-quality, stylish clothing for men and women in Johannesburg. Shop our collections of elegant dresses, casual wear, designer jeans, and professional suits at affordable prices.">
+    <meta name="keywords" content="clothing store Johannesburg, elegant fashion, men's clothing, women's clothing, designer clothes, affordable fashion, South Africa fashion, casual wear, business attire">
+    <meta name="author" content="Elegance Clothing">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Elegance Clothing - Premium Fashion in Johannesburg">
+    <meta property="og:description" content="Discover stylish, affordable clothing for every occasion at Elegance Clothing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eleganceclothing.co.za">
+    
+    <title>Elegance Clothing - Premium Fashion in Johannesburg | Men's & Women's Clothing</title>
+    
+    <!-- External CSS Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS Reset for cross-browser consistency */
+        html, body, div, span, h1, h2, h3, p, a, img, ul, li, nav, main, section, form, input, textarea, button, label {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* Base Styles - Default styles for entire website */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Typography Styles using font properties */
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 0.02em;
+        }
+
+        h3 {
+            font-family: 'Georgia', serif;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+
+        /* Layout Structure using CSS Grid and Flexbox */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        /* Navigation Layout */
+        nav {
+            display: flex;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
+        /* Navigation Links using Flexbox */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        /* Visual Styles with CSS properties */
+        .logo {
+            color: #0056b3;
+            text-decoration: none;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            border: none;
+            background-color: transparent;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        /* Interactive Elements using pseudo-classes */
+        .nav-links a:hover {
+            color: #0056b3;
+        }
+
+        .nav-links a:focus {
+            outline: 2px solid #0056b3;
+            outline-offset: 2px;
+        }
+
+        .nav-links a:active {
+            color: #003d82;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #0056b3;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            color: #0056b3;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #0056b3, #667eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Section Styles */
+        .section {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Search Functionality */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            gap: 1rem;
+        }
+
+        .search-bar input {
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #0056b3;
+            border-radius: 25px;
+            width: 100%;
+            max-width: 400px;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            padding: 0.8rem 2rem;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background: #003d82;
+        }
+
+        /* Product Grid Layout using CSS Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            color: #0056b3;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Collections Grid Layout */
+        .collections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .collection-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .collection-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .collection-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .collection-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .collection-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        /* Form Styles */
+        .form-container {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-weight: 600;
+            color: #0056b3;
+        }
+
+        input, textarea, select {
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #0056b3;
+        }
+
+        input.error, textarea.error, select.error {
+            border-color: #e74c3c;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        button[type="submit"] {
+            padding: 1rem 2rem;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background: #003d82;
+        }
+
+        .success-message {
+            background: #27ae60;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+            animation: slideDown 0.5s ease;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Contact Info using CSS Grid */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact-item h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        /* Modal/Lightbox for Image Gallery */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ccc;
+        }
+
+        /* Responsive Design - Mobile Breakpoint */
+        @media screen and (max-width: 768px) {
+            /* Mobile Navigation */
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            /* Mobile Typography */
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            /* Mobile Layout - Single Column */
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .collections {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            /* Mobile Container */
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .search-bar {
+                flex-direction: column;
+            }
+
+            .search-bar input {
+                max-width: 100%;
+            }
+        }
+
+        /* Tablet Breakpoint */
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Desktop Breakpoint */
+        @media screen and (min-width: 1025px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">Elegance Clothing</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <h1>Welcome to Elegance Clothing</h1>
+                <p>Discover high-quality, stylish clothing for men and women. Our mission is to provide comfortable, affordable, and fashionable clothing that makes you feel confident and elegant.</p>
+            </section>
+
+            <!-- Collections Section -->
+            <section id="collections" class="section">
+                <h2>Our Collections</h2>
+                <div class="collections">
+                    <div class="collection-item">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Summer Collection - Light and breezy clothing for warm weather">
+                        <div class="collection-overlay">
+                            <h3>Summer Collection</h3>
+                            <p>Light, breezy styles for warm weather</p>
+                        </div>
+                    </div>
+                    <div class="collection-item">
+                        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Winter Collection - Cozy and stylish winter wear">
+                        <div class="collection-overlay">
+                            <h3>Winter Collection</h3>
+                            <p>Cozy and stylish winter wear</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Products Section with Search -->
+            <section id="products" class="section">
+                <h2>Featured Products</h2>
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button onclick="searchProducts()">Search</button>
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <div class="product-card" data-name="elegant evening dress">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2005&q=80" alt="Elegant Evening Dress" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Elegant Evening Dress</h3>
+                            <p>Perfect for special occasions and evening events</p>
+                            <div class="price">R899</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="casual button shirt">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="Casual Button Shirt" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Casual Button Shirt</h3>
+                            <p>Comfortable everyday wear for any occasion</p>
+                            <div class="price">R450</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="designer denim jeans">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Designer Denim Jeans" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Designer Denim Jeans</h3>
+                            <p>Premium quality denim for a perfect fit</p>
+                            <div class="price">R750</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="professional suit">
+                        <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80" alt="Professional Business Suit" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Professional Suit</h3>
+                            <p>Sharp, tailored look for business occasions</p>
+                            <div class="price">R1,299</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="trendy casual top">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Trendy Casual Top" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Trendy Casual Top</h3>
+                            <p>Stylish and comfortable for everyday wear</p>
+                            <div class="price">R350</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-name="leather jacket">
+                        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Classic Leather Jacket" onclick="openModal(this.src)">
+                        <div class="product-info">
+                            <h3>Leather Jacket</h3>
+                            <p>Classic leather jacket for a timeless look</p>
+                            <div class="price">R1,499</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2>About Elegance Clothing</h2>
+                <p>At Elegance Clothing, we believe that everyone deserves to feel confident and stylish. Since our founding, we've been committed to providing high-quality, fashionable clothing at affordable prices. Our carefully curated collections feature the latest trends while maintaining timeless elegance.</p>
+                <br>
+                <p>We source our materials from trusted suppliers and work with skilled craftspeople to ensure every piece meets our high standards. Whether you're looking for professional attire, casual wear, or something special for a night out, we have the perfect piece to express your unique style.</p>
+            </section>
+
+            <!-- Enquiry Form Section -->
+            <section id="enquiry" class="section">
+                <h2>Product Enquiry</h2>
+                <div class="form-container">
+                    <div class="success-message" id="enquirySuccess">
+                        Thank you for your enquiry! We'll get back to you soon with pricing and availability information.
+                    </div>
+                    <form id="enquiryForm" onsubmit="return validateEnquiryForm(event)">
+                        <div class="form-group">
+                            <label for="enquiryName">Full Name *</label>
+                            <input type="text" id="enquiryName" name="name" required>
+                            <span class="error-message" id="nameError">Please enter your full name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiryEmail">Email Address *</label>
+                            <input type="email" id="enquiryEmail" name="email" required>
+                            <span class="error-message" id="emailError">Please enter a valid email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiryPhone">Phone Number *</label>
+                            <input type="tel" id="enquiryPhone" name="phone" pattern="[0-9]{10}" required>
+                            <span class="error-message" id="phoneError">Please enter a valid 10-digit phone number</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiryProduct">Product Interest *</label>
+                            <select id="enquiryProduct" name="product" required>
+                                <option value="">Select a product</option>
+                                <option value="evening-dress">Elegant Evening Dress</option>
+                                <option value="casual-shirt">Casual Button Shirt</option>
+                                <option value="denim-jeans">Designer Denim Jeans</option>
+                                <option value="suit">Professional Suit</option>
+                                <option value="casual-top">Trendy Casual Top</option>
+                                <option value="leather-jacket">Leather Jacket</option>
+                            </select>
+                            <span class="error-message" id="productError">Please select a product</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiryMessage">Your Message *</label>
+                            <textarea id="enquiryMessage" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError">Please enter your message</span>
+                        </div>
+
+                        <button type="submit">Submit Enquiry</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section id="contact" class="section">
+                <h2>Contact Us</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Visit Our Store</h3>
+                        <p>33 De Beer St<br>Johannesburg<br>South Africa</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Call Us</h3>
+                        <p>+27 71 234 5678</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email Us</h3>
+                        <p>info@eleganceclothing.co.za</p>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3 style="text-align: center; margin-top: 2rem;">Send us a Message</h3>
+                    <div class="success-message" id="contactSuccess">
+                        Thank you for contacting us! We'll respond to your message shortly.
+                    </div>
+                    <form id="contactForm" onsubmit="return validateContactForm(event)">
+                        <div class="form-group">
+                            <label for="contactName">Full Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                            <span class="error-message" id="contactNameError">Please enter your full name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                            <span class="error-message" id="contactEmailError">Please enter a valid email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageType">Message Type *</label>
+                            <select id="messageType" name="type" required>
+                                <option value="">Select message type</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                            <span class="error-message" id="typeError">Please select a message type</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message *</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                            <span class="error-message" id="contactMessageError">Please enter your message (minimum 10 characters)</span>
+                        </div>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Image Modal/Lightbox -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Search Products Functionality
+        function searchProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+            
+            productCards.forEach(card => {
+                const productName = card.getAttribute('data-name').toLowerCase();
+                if (productName.includes(searchInput)) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Allow search on Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchProducts();
+            }
+        });
+
+        // Image Modal/Lightbox Functions
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = 'block';
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Enquiry Form Validation
+        function validateEnquiryForm(event) {
+            event.preventDefault();
+            
+            let isValid = true;
+            
+            // Get form elements
+            const name = document.getElementById('enquiryName');
+            const email = document.getElementById('enquiryEmail');
+            const phone = document.getElementById('enquiryPhone');
+            const product = document.getElementById('enquiryProduct');
+            const message = document.getElementById('enquiryMessage');
+            
+            // Reset previous errors
+            document.querySelectorAll('.error-message').forEach(msg => msg.classList.remove('show'));
+            document.querySelectorAll('input, textarea, select').forEach(input => input.classList.remove('error'));
+            
+            // Validate Name
+            if (name.value.trim().length < 2) {
+                document.getElementById('nameError').classList.add('show');
+                name.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value)) {
+                document.getElementById('emailError').classList.add('show');
+                email.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Phone (10 digits)
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone.value.replace(/\s/g, ''))) {
+                document.getElementById('phoneError').classList.add('show');
+                phone.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Product Selection
+            if (product.value === '') {
+                document.getElementById('productError').classList.add('show');
+                product.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Message
+            if (message.value.trim().length < 10) {
+                document.getElementById('messageError').classList.add('show');
+                message.classList.add('error');
+                isValid = false;
+            }
+            
+            // If form is valid, show success message
+            if (isValid) {
+                document.getElementById('enquirySuccess').classList.add('show');
+                document.getElementById('enquiryForm').reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('enquirySuccess').classList.remove('show');
+                }, 5000);
+                
+                // In a real application, you would send the form data to a server here
+                console.log('Enquiry form submitted successfully');
+            }
+            
+            return false;
+        }
+
+        // Contact Form Validation
+        function validateContactForm(event) {
+            event.preventDefault();
+            
+            let isValid = true;
+            
+            // Get form elements
+            const name = document.getElementById('contactName');
+            const email = document.getElementById('contactEmail');
+            const type = document.getElementById('messageType');
+            const message = document.getElementById('contactMessage');
+            
+            // Reset previous errors
+            document.querySelectorAll('.error-message').forEach(msg => msg.classList.remove('show'));
+            document.querySelectorAll('input, textarea, select').forEach(input => input.classList.remove('error'));
+            
+            // Validate Name
+            if (name.value.trim().length < 2) {
+                document.getElementById('contactNameError').classList.add('show');
+                name.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value)) {
+                document.getElementById('contactEmailError').classList.add('show');
+                email.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Message Type
+            if (type.value === '') {
+                document.getElementById('typeError').classList.add('show');
+                type.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate Message (minimum 10 characters)
+            if (message.value.trim().length < 10) {
+                document.getElementById('contactMessageError').classList.add('show');
+                message.classList.add('error');
+                isValid = false;
+            }
+            
+            // If form is valid, show success message
+            if (isValid) {
+                document.getElementById('contactSuccess').classList.add('show');
+                document.getElementById('contactForm').reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('contactSuccess').classList.remove('show');
+                }, 5000);
+                
+                // In a real application, you would send the form data via email here
+                console.log('Contact form submitted successfully');
+            }
+            
+            return false;
+        }
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeIn 1s ease';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Real-time form validation feedback
+        function setupRealTimeValidation() {
+            // Enquiry form real-time validation
+            const enquiryPhone = document.getElementById('enquiryPhone');
+            enquiryPhone.addEventListener('input', function(e) {
+                // Remove non-numeric characters
+                this.value = this.value.replace(/[^0-9]/g, '');
+                // Limit to 10 digits
+                if (this.value.length > 10) {
+                    this.value = this.value.slice(0, 10);
+                }
+            });
+
+            // Email validation on blur
+            const emailInputs = document.querySelectorAll('input[type="email"]');
+            emailInputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (this.value && !emailPattern.test(this.value)) {
+                        this.classList.add('error');
+                    } else {
+                        this.classList.remove('error');
+                    }
+                });
+            });
+
+            // Remove error class on input
+            const allInputs = document.querySelectorAll('input, textarea, select');
+            allInputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    this.classList.remove('error');
+                    const errorId = this.id + 'Error';
+                    const errorMsg = document.getElementById(errorId);
+                    if (errorMsg) {
+                        errorMsg.classList.remove('show');
+                    }
+                });
+            });
+        }
+
+        // Initialize real-time validation on page load
+        document.addEventListener('DOMContentLoaded', setupRealTimeValidation);
+
+        // Dynamic content loading simulation
+        function loadDynamicContent() {
+            console.log('Page loaded successfully');
+            console.log('All products loaded:', document.querySelectorAll('.product-card').length);
+        }
+
+        window.addEventListener('load', loadDynamicContent);
+    </script>
+</body>
+</html>
