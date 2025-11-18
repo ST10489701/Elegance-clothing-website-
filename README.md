@@ -234,14 +234,4 @@ https://github.com/yourusername/elegance-clothing-website
 ✅ **Update README.md** with each commit  
 ✅ **Make repository public** so instructor can access  
 ✅ **Add screenshots** to document your work  
-✅ **Enable GitHub Pages** to show live demo  
-
----
-
-## **Visual Summary:**
-```
-GitHub Website Flow:
-1. Create Repository → 2. Upload Files → 3. Edit README → 4. Make Commits → 5. Share Link
-
-For Updates:
-1. Navigate to File → 2. Click Pencil Icon → 3. Make Changes → 4. Commit → Done!
+✅ **Enable GitHub Pages** to show live demo
